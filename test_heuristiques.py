@@ -23,7 +23,7 @@ def plot(points, path: list, titre= ""):
     for i in range(0,points.shape[0]):
         x.append(points[i][0])
         y.append(points[i][1])        
-    plt.figure("solution")    
+    plt.figure("solution", figsize=(16,9))    
     plt.plot(x, y, 'co')
     
     for i in range(0,len(points)):                                       
@@ -154,7 +154,7 @@ if (__name__ == "__main__"):
                                                matrice), 'blue'), "km")
     print ('Total time in seconds :', colored(interval, 'red'))
     print('nombre d\'itérations : ', 500)
-    
+
     
     
     print('_________________________________________________________________')
